@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Player3D from './player-3d'
 
 class App extends Component {
 
@@ -24,8 +25,21 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-
+      <div className='col-center'>
+        <div>
+          <h2>3D обзор товара, через покадровую смену фотографий</h2>
+          <button id='start'>Старт</button>
+          <div className='container'>
+            {this.state.images.length > 0
+              ? <Player3D
+                framesList={this.state.images}
+                selectorStart='start'
+                intervalDefault={200}
+              />
+              : null
+            }
+          </div>
+        </div>
       </div>
     );
   }

@@ -1,1 +1,19 @@
+.container {
+  width: 480px;
+  height: 480px;
+}
 
+.player {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+.loader {
+  background: url("./images/loader.gif") center no-repeat;
+}
+
+.col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
