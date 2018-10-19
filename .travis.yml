@@ -1,12 +1,12 @@
 language: node_js
-sudo: false
 node_js:
-  - 8
-  - 7
+  - v6
 install:
-  - cd player3d && npm install
+  - cd player3d
+  - npm install
 script:
-  - cd player3d && npm test
+  - cd player3d 
+  - npm test
 cache:
   yarn: true
   npm: true
