@@ -55,6 +55,7 @@ export default class Player3D extends PureComponent {
     if (selectorStart) {
       selectorStart.removeEventListener('click', this.show)
     }
+    this.rotateStop()
   }
 
   show() {
@@ -64,10 +65,7 @@ export default class Player3D extends PureComponent {
       this.preloadImages()
     }
     else {
-      if (this.timerID) {
-        window.clearTimeout(this.timerID)
-        this.setState({rotating: false})
-      }
+      this.rotateStop()
       this.setCanvasRect()
       this.rotate()
     }
@@ -149,6 +147,7 @@ export default class Player3D extends PureComponent {
   }
 
   rotateStop() {
+    if (!this.timerID) return
     window.clearTimeout(this.timerID)
     this.setState({rotating: false})
   }
