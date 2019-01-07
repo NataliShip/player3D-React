@@ -1,5 +1,8 @@
 # Player3D на React [![Build Status](https://travis-ci.com/NataliShip/player3D-React.svg?branch=master)](https://travis-ci.com/NataliShip/player3D-React)
+
 3D плеер на React для демонстрации товаров на 360° с использованием canvas через покадровую смену фотографий. Используется Canvas, как наиболее подходящий инструмент для управления пиксельными изображениями.
+
+**DEMO: http://reactapp.ru/3d-player-react/**
 
 **Принимает параметры:**
 
@@ -25,3 +28,5 @@
 `images3d` - это переменная содержащая массив ссылок на изображения
 
 `'start'` - это id того элемента который будет запускать плеер. На него автоматически будет навешен обработчик на событие click. Достаточно добавить id
+
+![Alt text](http://reactapp.ru/img/3d-player-react.png "3d плеер React")
