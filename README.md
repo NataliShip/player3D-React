@@ -13,7 +13,7 @@
 `selectorStart` - селектор (id) элемента, который будет запускать плеер
 
 **Использование:**
-```
+```js
 <div class='container'>
   <Player3D
     framesList={images3d}
